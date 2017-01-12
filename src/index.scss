@@ -1,0 +1,31 @@
+/** Global styles and helpers **/
+@import './styles/_vars.scss';
+@import './styles/_mixins.scss';
+/** End Helpers **/
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body, h1, h2, h3 {
+  font-weight: 300
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: #5aadbb;
+  }
+}
+
+/** import components here! **/
+@import './app/components/main/main.scss';
+@import './app/components/common/header/header.scss';
+@import './app/components/common/footer/footer.scss';
+@import './app/components/techs/techs.scss';
+@import './app/components/techs/tech/tech.scss';
+/** end components **/
